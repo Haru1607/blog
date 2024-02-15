@@ -6,10 +6,16 @@
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="{{ route('listado') }}">Listado de posts <span class="sr-only"></span></a>
+        <a class="nav-link" href="{{ route('post.index') }}">Listado de posts <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('posts_ficha') }}">Ficha Posts</a>
+        <a class="nav-link" href="{{ route('post.show', 1) }}">Ficha Posts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('post.create') }}">Crear Posts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('post.edit', 1) }}">Editar Posts</a>
       </li>
     </ul>
   </div>
